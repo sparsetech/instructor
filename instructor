@@ -1,0 +1,3 @@
+#!/usr/bin/sh
+BASE_PATH=$(dirname $(readlink -f $0))
+java -jar $BASE_PATH/instructor.jar --assets=$BASE_PATH/assets "$@"
